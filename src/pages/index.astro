@@ -1,0 +1,130 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Crazy Pig Mod | Minecraft</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-pink-600 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="text-xl font-bold">🐷 Crazy Pig Mod</div>
+        <div class="space-x-4">
+          <a href="#features" class="hover:underline">Features</a>
+          <a href="#gallery" class="hover:underline">Gallery</a>
+          <a href="#download" class="hover:underline">Download</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Crazy Pig Mod</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+          Transform ordinary Minecraft pigs into super-powered hoglins with our custom 'Rotten Carrot' item!
+        </p>
+        <a href="#download" class="bg-white text-pink-600 px-6 py-3 rounded-lg font-bold hover:bg-pink-100 transition duration-300">
+          Download Now
+        </a>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Mod Features</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+            <div class="text-pink-600 text-4xl mb-4">🥕</div>
+            <h3 class="text-xl font-bold mb-2">Rotten Carrot</h3>
+            <p>Craft or find the unique 'Rotten Carrot' item that's essential for pig transformation.</p>
+          </div>
+          
+          <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+            <div class="text-pink-600 text-4xl mb-4">🐷</div>
+            <h3 class="text-xl font-bold mb-2">Pig Transformation</h3>
+            <p>Feed a pig the Rotten Carrot and watch it transform into a powerful hoglin variant!</p>
+          </div>
+          
+          <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+            <div class="text-pink-600 text-4xl mb-4">💪</div>
+            <h3 class="text-xl font-bold mb-2">Enhanced Hoglins</h3>
+            <p>These aren't ordinary hoglins - they're stronger, faster, and more dangerous than vanilla ones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Item Showcase Section -->
+    <section class="py-16 bg-pink-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">The Rotten Carrot</h2>
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md max-w-md">
+            <h3 class="text-xl font-bold mb-4 text-pink-600">How to Obtain</h3>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Craft using 1 carrot and 4 rotten flesh</li>
+            </ul>
+          </div>
+          
+          <div class="w-48 h-48 rounded-lg flex items-center justify-center">
+            <img src="/recipe.png" alt="Rotten Carrot Recipe" class="w-full h-full object-contain" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Transformation Gallery</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
+            <img src="/recipe.png" alt="Rotten Carrot Recipe" class="w-full h-full object-contain" />
+            </div>
+            <div class="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
+            <img src="/pig.png" alt="Normal Pig" class="w-full h-full object-contain" />
+            </div>
+            <div class="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
+            <img src="/hoglin.png" alt="Enhanced Hoglin" class="w-full h-full object-contain" />
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-pink-600 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Download Crazy Pig Mod</h2>
+        <p class="mb-8 max-w-2xl mx-auto">
+          Compatible with Minecraft versions 1.16 - 1.19
+        </p>
+        <div class="flex justify-center">
+          <a href="https://modrinth.com/mod/crazy-pig" class="bg-white text-pink-600 px-6 py-3 rounded-lg font-bold hover:bg-pink-100 transition duration-300">
+            Download for Fabric
+          </a>
+        </div>
+        <p class="mt-6 text-sm opacity-80">
+          Always backup your world before installing any mods!
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p>© 2025 Crazy Pig Mod. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
